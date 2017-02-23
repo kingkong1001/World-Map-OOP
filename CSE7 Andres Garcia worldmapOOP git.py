@@ -13,5 +13,7 @@ class Room(object):
         node = globals()[getattr(self, direction)]
 
 bearCave = Room("The Bear's cave",'entrance','tunnels',None, None, None, None, 'This is where the giant cave bear lives')
- #done for the day
- 
+
+entrance = Room("The Entrance", None, 'bearcave', None, None, None, None, 'This is where you came in')
+
+tunnel = Room("The Tunnel", 'bearcave', 'stream', 'waterfall', 'quicksand') 

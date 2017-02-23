@@ -16,4 +16,4 @@ bearCave = Room("The Bear's cave",'entrance','tunnels',None, None, None, None, '
 
 entrance = Room("The Entrance", None, 'bearcave', None, None, None, None, 'This is where you came in')
 
-tunnel = Room("The Tunnel", 'bearcave', 'stream', 'waterfall', 'quicksand') 
+tunnel = Room("The Tunnel", 'bearcave', 'stream', 'waterfall', 'quicksand', None, None, 'This will get you closer to the exit')

@@ -38,4 +38,4 @@ jungle = Room("The Jungle", 'cave exit', 'treepath', None, 'monkey mayhem', None
 ocean = Room("The Ocean", None, 'shark territorry', 'volcano', 'beach', None, None, \
 'This is a world of terror')
 
-mudslideclimb = Room
+mudslideclimb = Room("Mudslideclimb")

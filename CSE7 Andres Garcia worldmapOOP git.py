@@ -32,4 +32,5 @@ beach = Room("The Beach", None, None, 'ocean', 'caveexit', None, None, "This is 
 deadmansMountain = Room("Dead mans mountain", 'caveexit', None, 'mudslideclimb', None, None, None, \
 'This mountain will kill you even if you can survive')
 
-jungle = Room("The Jungle", 'Exit', 'treepath', None, 'monkey mayhem', None, 'wolfden' )
+jungle = Room("The Jungle", 'Exit', 'treepath', None, 'monkey mayhem', None, 'wolfden', \
+'This place is filled with wild animals')

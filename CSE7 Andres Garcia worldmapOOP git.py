@@ -27,10 +27,15 @@ waterfall = Room("The Waterfall", 'tunnel', None, 'caveexit', 'stream', None, No
 caveExit = Room("The Cave exit", None, 'jungle', 'beach', 'waterfall', None, 'deadmansmountain', \
 "This is the way out of the cave")
 
-beach = Room("The Beach", None, None, 'ocean', 'caveexit', None, None, "This is the way to the ocean")
+beach = Room("The Beach", None, None, 'ocean', 'cave exit', None, None, "This is the way to the ocean")
 
-deadmansMountain = Room("Dead mans mountain", 'caveexit', None, 'mudslideclimb', None, None, None, \
+deadmansMountain = Room("Dead mans mountain", 'cave exit', None, 'mudslideclimb', None, None, None, \
 'This mountain will kill you even if you can survive')
 
-jungle = Room("The Jungle", 'Exit', 'treepath', None, 'monkey mayhem', None, 'wolfden', \
+jungle = Room("The Jungle", 'cave exit', 'treepath', None, 'monkey mayhem', None, 'wolfden', \
 'This place is filled with wild animals')
+
+ocean = Room("The Ocean", None, 'shark territorry', 'volcano', 'beach', None, None, \
+'This is a world of terror')
+
+mudslideclimb = Room

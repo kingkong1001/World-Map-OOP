@@ -38,4 +38,37 @@ jungle = Room("The Jungle", 'cave exit', 'treepath', None, 'monkey mayhem', None
 ocean = Room("The Ocean", None, 'shark territorry', 'volcano', 'beach', None, None, \
 'This is a world of terror')
 
-mudslideclimb = Room("Mudslideclimb")
+mudslideclimb = Room("Mudslideclimb", 'dead mans mountain', 'mammothgraveyard', None, None, None, None, \
+'This is the slippery part of the mountain')
+
+mammothGraveyard = Room("Mammoth graveyard", 'mudslideclimb', None, 'dessert', None, 'sharkterritory', \
+None, 'This is where mammoths come to die')
+
+dessert = Room("Dessert", 'sharkterritory', None, None, None, None, None, \
+'This is the hottest place on earth')
+
+monkeyMayhem = Room("Monkey mayhem", 'grassy fields', None, 'jungle', 'river', 'redwood', None, \
+'This is monkey territory')
+
+#Controller
+
+node = bearCave
+is_alive = True
+directions = ['north','south','east','west','up,','down']
+short_directions =['n','s','e','w','u','d'] 
+   
+while is_alive:
+    print node.name
+    print node.description
+    ut('> ')
+    if command in ['q']
+    sys.exit(0)
+     
+     if command in short_directions:
+         command = directions[short_directions.index(command)]
+     try:
+          name_of_node = node['PATHS'][command]
+          node = world_map[node['PATHS'][command]]        
+         except:
+             print 'You Can\'t'
+             sys.exit(0)

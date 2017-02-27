@@ -50,6 +50,8 @@ dessert = Room("Dessert", 'sharkterritory', None, None, None, None, None, \
 monkeyMayhem = Room("Monkey mayhem", 'grassy fields', None, 'jungle', 'river', 'redwood', None, \
 'This is monkey territory')
 
+wolfden = Room("Wolf den")
+
 #Controller
 
 node = bearCave

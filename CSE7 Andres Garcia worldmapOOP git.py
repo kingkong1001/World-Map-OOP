@@ -25,7 +25,7 @@ quicksand = Room("The Quicksand", 'tunnel', None, 'stream', None, None, None, 'T
 waterfall = Room("The Waterfall", 'tunnel', None, 'caveexit', 'stream', None, None, 'This has a path to the exit')
 
 caveExit = Room("The Cave exit", None, 'jungle', 'beach', 'waterfall', None, 'deadmansmountain', \
-"This is the way out of the cave")
+'This is the way out of the cave')
 
 beach = Room("The Beach", None, None, 'ocean', 'cave exit', None, None, "This is the way to the ocean")
 
@@ -50,7 +50,7 @@ dessert = Room("Dessert", 'sharkterritory', None, None, None, None, None, \
 monkeyMayhem = Room("Monkey mayhem", 'grassy fields', None, 'jungle', 'river', 'redwood', None, \
 'This is monkey territory')
 
-wolfden = Room("Wolf den")
+wolfden = Room("Wolf den", 'bone tunnel', 'wolf bed', None, None, None, None, 'This is the way closer')
 
 #Controller
 
@@ -69,8 +69,8 @@ while is_alive:
      if command in short_directions:
          command = directions[short_directions.index(command)]
      try:
-          name_of_node = node['PATHS'][command]
-          node = world_map[node['PATHS'][command]]        
+          name_of_node = node.paths[command]
+          node = world_map[node.paths[command]]        
          except:
              print 'You Can\'t'
              sys.exit(0)

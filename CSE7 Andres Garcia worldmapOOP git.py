@@ -1,3 +1,6 @@
+import sys
+
+
 class Room(object):
     def __init__(self, name, north, south, east, west, up, down, desc):
         self.name = name
@@ -62,15 +65,14 @@ short_directions =['n','s','e','w','u','d']
 while is_alive:
     print node.name
     print node.description
-    ut('> ')
-    if command in ['q']
-    sys.exit(0)
+    command = raw_input('> ')
+    if command in ['q', 'quit', 'exit']:
+        sys.exit(0)
      
-     if command in short_directions:
-         command = directions[short_directions.index(command)]
-     try:
-          name_of_node = node.paths[command]
-          node = world_map[node.paths[command]]        
-         except:
-             print 'You Can\'t'
-             sys.exit(0)
+    if command in short_directions:
+        command = directions[short_directions.index(command)]
+    try:
+        
+    except:
+        print 'You Can\'t'
+        sys.exit(0)
